@@ -44,4 +44,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Quiz Level.unity
     guid: ba6fa4bc469b57643b0540ba439b9bdb
+  - enabled: 1
+    path: Assets/Scenes/LoginMenu.unity
+    guid: e44d422d26274d84c8b1d55577db438a
+  - enabled: 1
+    path: Assets/Scenes/SurveyPg1.unity
+    guid: c3e763330c7b77e48929e9ef21b1b08b
+  - enabled: 1
+    path: Assets/Scenes/SurveyPg2.unity
+    guid: af8a2b0a45dc9874b97dfd1301614a5b
+  - enabled: 1
+    path: Assets/Scenes/SurveyPg3.unity
+    guid: 7eeecceaf39e1a742b3c8356ae4bb87a
   m_configObjects: {}

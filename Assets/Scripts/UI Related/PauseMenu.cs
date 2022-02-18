@@ -1,16 +1,19 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
-//Manages pause menu while playing game
 public class PauseMenu : MonoBehaviour
 {
     public GameObject pauseMenuUI;
     public GameObject uiMenu;
+    //public MainMenu MainMenuScript;
+    public TMP_Text UsernameText;
     public static bool GameIsPaused = false;
+    //private string username;
     
+
 
     // Update is called once per frame
     void Update()
@@ -44,6 +47,10 @@ public class PauseMenu : MonoBehaviour
         uiMenu.SetActive(false);
         Time.timeScale = 0f;
         GameIsPaused = true;
+        //username = MainMenuScript.getUsername();
+        //username = MainMenu.username;
+        //UsernameText.SetText(MainMenu.username);
+        Debug.Log(MainMenu.username);
     }
 
     public void LoadMenu()
@@ -60,4 +67,12 @@ public class PauseMenu : MonoBehaviour
 
     //thing to implement, an options menu
     //If there is an options menu, make sure the player can access it through clicking the options button in the PauseMenu located in Canvas
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        UsernameText.SetText(MainMenu.username);
+    }
+
+
 }
