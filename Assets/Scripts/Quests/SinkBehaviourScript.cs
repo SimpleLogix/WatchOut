@@ -54,7 +54,12 @@ public class SinkBehaviourScript : MonoBehaviour
     {
         if (other.collider.tag == "Player" && playerHealth.healthPoints() < 100) 
         {
-            playerHealth.sinkHeal();
+            
+            if(Input.GetKey(KeyCode.E)){
+                playerHealth.sinkHeal();
+            }
+            
+            
         } 
         else
         {
