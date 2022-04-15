@@ -979,15 +979,27 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1907344602}
-        m_TargetAssemblyTypeName: SurveyManager, Assembly-CSharp
+        m_TargetAssemblyTypeName: ResponsePart2, Assembly-CSharp
+        m_MethodName: backToMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1907344602}
+        m_TargetAssemblyTypeName: GoogleSheetsForUnity.ResponsePart2, Assembly-CSharp
         m_MethodName: submit
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 3
+          m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: homeLevel
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &993113690
@@ -2320,7 +2332,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1907344602}
-        m_TargetAssemblyTypeName: SurveyManager, Assembly-CSharp
+        m_TargetAssemblyTypeName: ResponsePart2, Assembly-CSharp
         m_MethodName: backToPg2
         m_Mode: 1
         m_Arguments:
@@ -2873,7 +2885,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Enter text...
+  m_text: 'Enter text...
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2963,6 +2977,7 @@ GameObject:
   - component: {fileID: 1907344604}
   - component: {fileID: 1907344603}
   - component: {fileID: 1907344602}
+  - component: {fileID: 1907344608}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -2979,18 +2994,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1907344601}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2bc6429ed8a3b7a4186789bcf650c28c, type: 3}
+  m_Script: {fileID: 11500000, guid: 61d7ba75990bfe34b8a1040e4164f19d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Q1Slider: {fileID: 0}
-  Q2Slider: {fileID: 0}
-  answer1: {fileID: 0}
-  answer2: {fileID: 0}
   answer5: {fileID: 1127760744}
   answer6: {fileID: 34464111}
   answer7: {fileID: 1297310312}
-  answer3: {fileID: 0}
-  answer4: {fileID: 0}
 --- !u!114 &1907344603
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3056,6 +3065,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1907344608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1907344601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d6e98db625ad0d448c94ccc2d8d8d70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  connectionData: {fileID: 11400000, guid: 334761933f5d37543b94066d22d863f2, type: 2}
 --- !u!1 &1947173034
 GameObject:
   m_ObjectHideFlags: 0

@@ -434,7 +434,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 927368965}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SurveyManager, Assembly-CSharp
         m_MethodName: backToMenu
         m_Mode: 1
@@ -484,6 +484,49 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 798603274}
   m_CullTransparentMesh: 0
+--- !u!1 &908316769
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 908316771}
+  - component: {fileID: 908316770}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &908316770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 908316769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 502e7560ce0aed4418538e2686e48af3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &908316771
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 908316769}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 313.9354, y: 348.4159, z: -110.759514}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &927368964
 GameObject:
   m_ObjectHideFlags: 0
@@ -496,7 +539,6 @@ GameObject:
   - component: {fileID: 927368968}
   - component: {fileID: 927368967}
   - component: {fileID: 927368966}
-  - component: {fileID: 927368965}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -504,27 +546,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &927368965
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 927368964}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2bc6429ed8a3b7a4186789bcf650c28c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Q1Slider: {fileID: 0}
-  Q2Slider: {fileID: 0}
-  answer1: {fileID: 0}
-  answer2: {fileID: 0}
-  answer5: {fileID: 0}
-  answer6: {fileID: 0}
-  answer7: {fileID: 0}
-  answer3: {fileID: 0}
-  answer4: {fileID: 0}
 --- !u!114 &927368966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -583,12 +604,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 927368964}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1063.4, y: -85.197205, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_Father: {fileID: 1951098042}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &959865409
 GameObject:
@@ -1156,6 +1177,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 434876184}
+  - {fileID: 927368969}
   m_Father: {fileID: 1790817162}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1208,8 +1230,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 927368965}
-        m_TargetAssemblyTypeName: SurveyManager, Assembly-CSharp
+      - m_Target: {fileID: 908316770}
+        m_TargetAssemblyTypeName: ResponsesPart0, Assembly-CSharp
         m_MethodName: nextPg2
         m_Mode: 1
         m_Arguments:
@@ -1393,12 +1415,12 @@ MonoBehaviour:
   m_text: 'Increasing Awareness and Eradicating the Spread of COVID-19: A Game-Based
     Learning Approach for Youth.
 
-    
 
-    Thank you and welcome to our feedback
-    survey for WatchOut! All form submissions are anonymous. Please take 5 minutes
-    to fill out the questions as honestly as you can. Your Feedback and constructive
-    criticism is highly valued in helping make this a better game. '
+
+    Thank you and welcome to our feedback survey
+    for WatchOut! All form submissions are anonymous. Please take 5 minutes to fill
+    out the questions as honestly as you can. Your Feedback and constructive criticism
+    is highly valued in helping make this a better game. '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}

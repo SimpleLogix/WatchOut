@@ -3035,7 +3035,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2027786047}
-        m_TargetAssemblyTypeName: SurveyManager, Assembly-CSharp
+        m_TargetAssemblyTypeName: ResponsePart1, Assembly-CSharp
         m_MethodName: nextPg3
         m_Mode: 1
         m_Arguments:
@@ -3243,8 +3243,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2027786047}
-        m_TargetAssemblyTypeName: SurveyManager, Assembly-CSharp
-        m_MethodName: backToMenu
+        m_TargetAssemblyTypeName: ResponsePart1, Assembly-CSharp
+        m_MethodName: backToPg1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3577,15 +3577,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 2027786042}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2bc6429ed8a3b7a4186789bcf650c28c, type: 3}
+  m_Script: {fileID: 11500000, guid: 16b9939402b766f4bba3981ad8626f88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Q1Slider: {fileID: 1842351133}
   Q2Slider: {fileID: 1265175734}
   answer1: {fileID: 186263334}
   answer2: {fileID: 340347239}
-  answer5: {fileID: 0}
-  answer6: {fileID: 0}
-  answer7: {fileID: 0}
   answer3: {fileID: 731108757}
   answer4: {fileID: 1993338529}
