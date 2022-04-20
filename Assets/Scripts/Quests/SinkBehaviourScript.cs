@@ -44,8 +44,8 @@ public class SinkBehaviourScript : MonoBehaviour
         Debug.Log("collided");
         if (other.collider.tag == "Player" && playerHealth.healthPoints() < 100)
         {
-        sink_AC.SetBool("playerNearby", true);
-        mp3Sound.Play();
+        //sink_AC.SetBool("playerNearby", true);
+        //mp3Sound.Play();
         }
     }
 
@@ -56,6 +56,8 @@ public class SinkBehaviourScript : MonoBehaviour
         {
             
             if(Input.GetKey(KeyCode.E)){
+                sink_AC.SetBool("playerNearby", true);
+                mp3Sound.Play();
                 playerHealth.sinkHeal();
             }
             
